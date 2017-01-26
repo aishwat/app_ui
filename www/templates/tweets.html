@@ -1,0 +1,24 @@
+<ion-view view-title="Tweet List">
+    <ion-content class="padding">
+      <ion-list>
+        <div ng-repeat="(key,value) in tweets">
+            <div class="item item-divider">
+                {{value.text}}
+            </div>
+            <div class="item item-text-wrap">
+                Time: {{value.created_at}}
+            </div>
+            <div class="item item-text-wrap">
+                Id: {{value._id}}
+            </div>
+                <!-- <ion-list>
+                    <div ng-repeat="x in value">
+                        <div class="item item-text-wrap">
+                            {{x}}
+                        </div>
+                    </div>
+                </ion-list> -->
+            </div>
+        </ion-list>
+    </ion-content>
+</ion-view>
